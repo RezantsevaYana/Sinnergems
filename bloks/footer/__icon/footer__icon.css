@@ -1,0 +1,9 @@
+.footer__icon {
+    background-image: url(../../../images/tlg.svg);
+    width: 31px;
+    height: 25px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}

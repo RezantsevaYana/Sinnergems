@@ -1,0 +1,16 @@
+.form__result-ask {
+    background-image: url(../../../images/ask.svg);
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+    background-position: center;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.form__result-ask:hover {
+    cursor: pointer;
+    transition-duration: .3s;
+    opacity: 0.6;
+}

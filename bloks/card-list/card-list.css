@@ -1,0 +1,8 @@
+.card-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 14.85px;
+    background-color: #1D1D1D;;
+}

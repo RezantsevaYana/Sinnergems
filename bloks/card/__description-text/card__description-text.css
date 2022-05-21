@@ -1,0 +1,13 @@
+.card__description-text {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.card__description-text:last-of-type {
+    margin-top: 11px;
+}

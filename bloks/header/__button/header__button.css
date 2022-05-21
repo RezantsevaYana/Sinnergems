@@ -1,0 +1,27 @@
+.header__button {
+    width: 26.51px;
+    height: 29px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 9px;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.header__button:hover {
+    cursor: pointer;
+}
+
+.header__button_active {
+    color: #B9A775;
+}

@@ -1,0 +1,10 @@
+.form__information-logo {
+    background-image: url(../../../images/anonim.svg);
+    width: 20px;
+    height: 16px;
+    background-size: contain;
+    background-position: center;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}

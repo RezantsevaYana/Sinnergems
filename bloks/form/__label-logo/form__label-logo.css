@@ -1,0 +1,18 @@
+.form__label-logo {
+    width: 22px;
+    height: 18px;
+    background-size: contain;
+    background-position: center;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+.form__label-logo_delivery {
+    background-image: url(../../../images/delivery.svg);
+}
+
+.form__label-logo_user {
+    background-image: url(../../../images/user.svg);
+}

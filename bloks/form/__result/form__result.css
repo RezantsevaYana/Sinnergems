@@ -1,0 +1,20 @@
+.form__result {
+    width: 226px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__result:first-of-type {
+    margin-bottom: 20px;
+}
+
+.form__result_ask {
+    width: 157px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+

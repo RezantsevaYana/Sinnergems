@@ -1,0 +1,23 @@
+.form__button {
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    width: 347px;
+    height: 40px;
+    background: #B9A775;
+    border-radius: 20px 0px 0px 0px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #1D1D1D;
+    margin: 34px 0 25px;
+}
+
+.form__button:hover {
+    cursor: pointer;
+    transition-duration: .3s;
+    opacity: 0.6;
+}

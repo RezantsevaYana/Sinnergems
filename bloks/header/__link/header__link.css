@@ -1,0 +1,19 @@
+.header__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.5895px;
+    line-height: 17px;
+    color: #C4C4C4;
+    margin-right: 44px;
+}
+
+.header__link:last-of-type {
+    margin-right: 0;
+}
+
+.header__link:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+.popup__description-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    margin: 0;
+}
+
+.popup__description-text_positiv {
+    width: 461px;
+}
+
+.popup__description-text_negativ {
+    width: 564px;
+}

@@ -1,0 +1,62 @@
+.popup {
+    width: 1296px;
+    height: 530px;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(35px);
+    position: fixed;
+    top: 20%;
+    border-radius: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
+
+    border-radius: 20px;
+
+    z-index: 2;
+
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
+
+.popup__profile {
+    width: 375px;
+    height: 427px;
+    background-color: #1D1D1D;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 121px 108px 130px 108px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+.popup__profile:hover {
+    cursor: pointer;
+}
+
+
+.popup__profile-img {
+    width: 108px;
+    height: 118px;
+    box-sizing: cover;
+}
+
+.popup__profile-text {
+    margin: 25px 0 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #C4C4C4;
+}

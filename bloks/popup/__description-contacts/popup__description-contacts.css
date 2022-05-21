@@ -1,0 +1,37 @@
+.popup__description-contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.popup__description-contacts:hover {
+    cursor: pointer;
+}
+
+.popup__description-contacts_positiv {
+    margin: 55px 0 0 0;
+}
+.popup__description-contacts_negativ {
+    margin: 45px 0 0 0;
+}
+
+.contacts-logo {
+    background-image: url(../../../images/tlg-active.svg);
+    width: 31px;
+    height: 25px;
+    margin-right: 17px;
+}
+
+.contacts-link {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #B9A775;
+}
