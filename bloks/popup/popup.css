@@ -2,6 +2,7 @@
     width: 1296px;
     height: 530px;
     background-color: rgba(0, 0, 0, .5);
+    -webkit-backdrop-filter: blur(35px);
     backdrop-filter: blur(35px);
     position: fixed;
     top: 20%;
