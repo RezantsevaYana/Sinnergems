@@ -97,5 +97,12 @@ burgerMenu.addEventListener('click', function(evt) {
     headerPopup.classList.add('popup_opened')
 })
 
+    // закрытие попапа с шапкой
+const popupHeaderCloseButton = headerPopup.querySelector('.popup__close_header-popup');
+console.log(popupHeaderCloseButton)
+
+popupHeaderCloseButton.addEventListener('click', function() {
+    headerPopup.classList.remove('popup_opened')
+})
 
 
