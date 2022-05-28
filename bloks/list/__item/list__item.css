@@ -1,8 +1,0 @@
-.list__item {
-    width: 546px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16.2px;
-}

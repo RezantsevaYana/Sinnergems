@@ -1,0 +1,14 @@
+.logo {
+    background-image: url(../../images/SINNERGEMS-logo.svg);
+    background-size: cover;
+    width: 218.79px;
+    height: 26.1px;
+}
+
+@media screen and (max-width: 1150px) {
+    .logo {
+        width: 222px;
+        height: 41px;
+        margin-bottom: -15px;
+    }
+}

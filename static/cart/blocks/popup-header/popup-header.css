@@ -1,0 +1,50 @@
+.popup-header {
+    display: none;
+    width: 100%;
+    height: 354px;
+
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    border-radius: 20px;
+    background-color: #171717;
+    padding: 58px 0 0 50px;
+    box-sizing: border-box;
+
+    z-index: 2;
+}
+
+.popup_opened {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-header__items {
+    padding-left: 44px;
+    margin: 0;
+}
+
+.popup-header__item {
+    width: 100%;
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 33px;
+}
+
+.popup__close_header-popup {
+    top: 16px;
+    right: 28px;
+}
+
+
+
