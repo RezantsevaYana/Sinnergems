@@ -26,6 +26,12 @@
     color: white;
     margin: 0;
     text-align: center;
+
+}
+
+.count {
+    align-items: center;
+    margin-top: 5px;
 }
 
 .mobile-header__button {
@@ -140,7 +146,7 @@
 }
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1350px) {
     .header__links {
         display: none;
     } 

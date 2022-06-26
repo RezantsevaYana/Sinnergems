@@ -64,13 +64,14 @@ payButtonSuccess.addEventListener('click', function(evt) {
     evt.preventDefault()
     popupGoodResult.classList.add('popup_opened')
 })
-
+/*
 // закрытие попапа неудачной оплаты
 const payButtonFaild = document.querySelector('.content__button')
 payButtonFaild.addEventListener('click', function(evt) {
     evt.preventDefault()
     popupBadResult.classList.add('popup_opened')
 })
+*/
 
 
 
@@ -94,7 +95,7 @@ console.log(headerPopup)
 const burgerMenu = document.querySelector('.mobile-header__button');
 burgerMenu.addEventListener('click', function(evt) {
     evt.preventDefault()
-    headerPopup.classList.add('popup_opened')
+    headerPopup.classList.add('popup-header_open')
 })
 
     // закрытие попапа с шапкой
@@ -102,7 +103,16 @@ const popupHeaderCloseButton = headerPopup.querySelector('.popup__close_header-p
 console.log(popupHeaderCloseButton)
 
 popupHeaderCloseButton.addEventListener('click', function() {
-    headerPopup.classList.remove('popup_opened')
+    headerPopup.classList.remove('popup-header_open')
 })
 
+// активные кнопочки на попапе
+const navigationMobilePopup = document.querySelectorAll('.popup-header__item')
+
+navigationMobilePopup.forEach((element) => {
+    element.addEventListener('click', function (evt) {
+        evt.target.classList.toggle('popup-header__item_activ');
+        element.querySelector('.popup-header__li').classList.toggle('popup-header__li_activ')
+    })
+});
 
