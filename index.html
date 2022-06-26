@@ -35,7 +35,7 @@
         <main>
 
             <section class="profile">
-                <h2 class="profile__info">егор остафьев</h2>
+                <p class="profile__info">егор остафьев</p>
                 <p class="profile__info">ostafiev3@gmail.com</span></p>
             </section>
 
@@ -48,7 +48,7 @@
             </section>
 
             <section class="content">
-                <a class="content-link">перейти к Оформлению</a>
+                <a class="content-link" href="#form">перейти к Оформлению</a>
                 <div class="content-gradient">
                     <div class="content-cards-button">
                         <div class="content-cards">
@@ -141,7 +141,7 @@
                 </div>
                 <div class="content-form">
                     <h2 class="form-title__mobile">оформление заказа</h2>
-                    <form class="form">
+                    <form class="form" id="form">
 
                         <div class="form__main-container">
                             <!-- Элементы формы для информации о адресе доставки -->
@@ -218,102 +218,108 @@
 
 
     <!-- попап успешной оплаты -->
-    <section class="popup popup__good_js_item">
-        <button class="popup__close popup__close_js_item" type="button"></button>
-        <div class="popup__description">
-            <h3 class="popup__description-title">оплата<br class="mobile-line-break"> прошла успешно</h3>
-            <img class="popup__description-img popup__description-img_positiv"
-                src="static/cart/images/positivresult.svg" alt="">
-            <p class="popup__description-text popup__description-text_positiv">Информация о доставке и все
-                подробности заказа теперь в Вашем Личном Кабинете</p>
-            <a>
-                <div class="popup__description-contacts popup__description-contacts_positiv">
+    <section class="popup-container popup__good_js_item">
+        <div class="popup">
+            <button class="popup__close popup__close_js_item" type="button"></button>
+            <div class="popup__description">
+                <h3 class="popup__description-title">оплата<br class="mobile-line-break"> прошла успешно</h3>
+                <img class="popup__description-img popup__description-img_positiv"
+                    src="static/cart/images/positivresult.svg" alt="">
+                <p class="popup__description-text popup__description-text_positiv">Информация о доставке и все
+                    подробности заказа теперь в Вашем Личном Кабинете</p>
+                <a>
+                    <div class="popup__description-contacts popup__description-contacts_positiv">
+                        <div class="contacts-logo"></div>
+                        <p class="contacts-link">&commat;sinnergems_help</p>
+                    </div>
+                </a>
+            </div>
+            <button class="popup__profile">
+                <img class="popup__profile-img" alt="" src="static/cart/images/profilelogo.svg">
+                <p class="popup__profile-text">перейти в личный кабинет</p>
+            </button>
+            <ul class="popup__footer-mobile">
+                <a class="popup__description-contacts-mobile">
                     <div class="contacts-logo"></div>
                     <p class="contacts-link">&commat;sinnergems_help</p>
-                </div>
-            </a>
+                </a>
+                <button class="popup__footer-profile"></button>
+            </ul>
         </div>
-        <button class="popup__profile">
-            <img class="popup__profile-img" alt="" src="static/cart/images/profilelogo.svg">
-            <p class="popup__profile-text">перейти в личный кабинет</p>
-        </button>
-        <ul class="popup__footer-mobile">
-            <a class="popup__description-contacts-mobile">
-                <div class="contacts-logo"></div>
-                <p class="contacts-link">&commat;sinnergems_help</p>
-            </a>
-            <button class="popup__footer-profile"></button>
-        </ul>
     </section>
 
 
     <!-- попап неудачной оплаты -->
-    <section class="popup popup__bad_js_item">
-        <button class="popup__close popup__close_js_item" type="button"></button>
-        <div class="popup__description">
-            <h3 class="popup__description-title">Ошибка Оплаты</h3>
-            <img class="popup__description-img popup__description-img_negativ"
-                src="static/cart/images/negativ-result.svg" alt="">
-            <p class="popup__description-text popup__description-text_negativ">По какой-то причине платёж совершить
-                НЕ удалось, вы можете:<br>
-                &bull; попробовать оплатить ещё раз из Корзины<br>
-                &bull; обратиться к нам за помощью</p>
-            <a>
-                <div class="popup__description-contacts popup__description-contacts_negativ">
+    <section class="popup-container popup__bad_js_item">
+        <div class="popup">
+            <button class="popup__close popup__close_js_item" type="button"></button>
+            <div class="popup__description">
+                <h3 class="popup__description-title">Ошибка Оплаты</h3>
+                <img class="popup__description-img popup__description-img_negativ"
+                    src="static/cart/images/negativ-result.svg" alt="">
+                <p class="popup__description-text popup__description-text_negativ">По какой-то причине платёж совершить
+                    НЕ удалось, вы можете:<br>
+                    &bull; попробовать оплатить ещё раз из Корзины<br>
+                    &bull; обратиться к нам за помощью</p>
+                <a>
+                    <div class="popup__description-contacts popup__description-contacts_negativ">
+                        <div class="contacts-logo"></div>
+                        <p class="contacts-link">&commat;sinnergems_help</p>
+                    </div>
+                </a>
+            </div>
+            <form class="popup__form">
+                <p class="popup__form-title">Заказ &numero; <span>6678453</span></p>
+                <label class="popup__form-label">
+                    Имя
+                    <input class="popup__form-input" type="text" placeholder="Как к вам обращаться?">
+                </label>
+                <label class="popup__form-label">
+                    Телефон / E-mail
+                    <input class="popup__form-input" placeholder="Как с вами связаться?">
+                </label>
+                <button class="popup__form-button">отправить</button>
+                <p class="popup__form-text">Нажимая на кнопку, Вы даете согласие
+                    на обработку персональных данных
+                    и соглашаетесь с политикой конфиденциальности</p>
+            </form>
+            <ul class="popup__footer-mobile">
+                <a class="popup__description-contacts-mobile">
                     <div class="contacts-logo"></div>
                     <p class="contacts-link">&commat;sinnergems_help</p>
-                </div>
-            </a>
+                </a>
+                <button class="popup__footer-profile"></button>
+            </ul>
         </div>
-        <form class="popup__form">
-            <h2 class="popup__form-title">Заказ &numero; <span>6678453</span></h2>
-            <label class="popup__form-label">
-                Имя
-                <input class="popup__form-input" type="text" placeholder="Как к вам обращаться?">
-            </label>
-            <label class="popup__form-label">
-                Телефон / E-mail
-                <input class="popup__form-input" placeholder="Как с вами связаться?">
-            </label>
-            <button class="popup__form-button">отправить</button>
-            <p class="popup__form-text">Нажимая на кнопку, Вы даете согласие
-                на обработку персональных данных
-                и соглашаетесь с политикой конфиденциальности</p>
-        </form>
-        <ul class="popup__footer-mobile">
-            <a class="popup__description-contacts-mobile">
-                <div class="contacts-logo"></div>
-                <p class="contacts-link">&commat;sinnergems_help</p>
-            </a>
-            <button class="popup__footer-profile"></button>
-        </ul>
     </section>
 
     <!-- попап c шапкой для мобильной версии -->
-    <section class="popup-header">
-        <button class="popup__close popup__close_header-popup" type="button"></button>
-        <ul class="popup-header__items">
-            <a href="#" class="item-link">
-                <li class="popup-header__item">
-                    <div class="popup-header__li"></div>главная
-                </li>
-            </a>
-            <a href="#" class="item-link">
-                <li class="popup-header__item">
-                    <div class="popup-header__li"></div>конструктор
-                </li>
-            </a>
-            <a href="#" class="item-link">
-                <li class="popup-header__item">
-                    <div class="popup-header__li"></div>личный кабинет
-                </li>
-            </a>
-            <a href="#" class="item-link">
-                <li class="popup-header__item">
-                    <div class="popup-header__li"></div>контакты
-                </li>
-            </a>
-        </ul>
+    <section class="popup-header-container">
+        <div class="popup-header">
+            <button class="popup__close popup__close_header-popup" type="button"></button>
+            <ul class="popup-header__items">
+                <a href="#" class="item-link">
+                    <li class="popup-header__item">
+                        <div class="popup-header__li"></div>главная
+                    </li>
+                </a>
+                <a href="#" class="item-link">
+                    <li class="popup-header__item">
+                        <div class="popup-header__li"></div>конструктор
+                    </li>
+                </a>
+                <a href="#" class="item-link">
+                    <li class="popup-header__item">
+                        <div class="popup-header__li"></div>личный кабинет
+                    </li>
+                </a>
+                <a href="#" class="item-link">
+                    <li class="popup-header__item">
+                        <div class="popup-header__li"></div>контакты
+                    </li>
+                </a>
+            </ul>
+        </div>
     </section>
 
     <script src="static/cart/js/index.js"></script>

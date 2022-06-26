@@ -34,6 +34,7 @@
 @media screen and (max-width: 520px) {
     .profile {
         flex-direction: column;
+        padding-top: 0;
     }
     .profile__info:last-of-type {
         margin-top: 10px;
