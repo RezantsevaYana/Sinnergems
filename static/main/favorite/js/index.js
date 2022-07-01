@@ -1,24 +1,3 @@
-// всплывающий список с подробной информацией о карточке
-const cards = document.querySelectorAll('.card-list');
-
-function listOpen(e) {
-    //   console.log(e.target)
-    //   console.log(this.querySelector('.list'))
-    const list = this.querySelector('.list')
-    const button = this.querySelector('.card__button-logo')
-    const gradient = this.querySelector('.list-gradient')
-    list.classList.toggle("list_opened");
-    button.classList.toggle("card__button-logo_active")
-    gradient.classList.toggle('list-gradient_opened')
-}
-
-cards.forEach((card) => {
-    card.querySelector('.card').addEventListener('click', listOpen.bind(card))
-})
-
-
-
-
 // активные ссылки в блоке навигации
 const navigation = document.querySelectorAll('.navigation__link')
 
@@ -27,7 +6,6 @@ navigation.forEach((navigation) => {
         evt.currentTarget.classList.toggle('navigation__link_active')
     })
 });
-
 
 
 
@@ -64,49 +42,9 @@ popupGoodResult = document.querySelector('.popup__good_js_item');
 popupBadResult = document.querySelector('.popup__bad_js_item');
 
 
-
-// открытие попапа успешной оплаты
-function successfulPay(evt) {
-    evt.preventDefault();
-    popupGoodResult.classList.add('popup_opened');
-    document.addEventListener('keydown', closePopupOnEsc);
-}
-
-const payButtonSuccess = document.querySelector('.form__button') // кнопка на которую временно навешено открытие попапа удачной оплаты
-payButtonSuccess.addEventListener('click', successfulPay)
-
-
-// открытие попапа неудчаной оплаты
-function unSuccessfulPay(evt) {
-    evt.preventDefault();
-    popupBadResult.classList.add('popup_opened');
-    document.addEventListener('keydown', closePopupOnEsc);
-}
-
-const payButtonFaild = document.querySelector('.card-delete') // кнопка на которую временно навешено открытие попапа неудачной оплаты
-payButtonFaild.addEventListener('click', unSuccessfulPay)
-
-
-
-
-// закрытие попапов с результатами оплаты
-function closeAllPopups() {
-    document.removeEventListener('keydown', closePopupOnEsc);
-    popups.forEach((popup) => {
-        popup.classList.remove('popup_opened');
-        const popupCloseButton = popup.querySelector('.popup__close')
-        popupCloseButton.addEventListener('click', function () {
-            popup.classList.remove('popup_opened')
-        })
-    });
-}
-
-closeAllPopups();
-
-
-
 // попап с шапкой
 headerPopup = document.querySelector('.popup-header-container') // попап
+console.log(headerPopup)
 
 // функция открытия попапа с шапкой
 function openHeaderPopup(evt) {
@@ -134,7 +72,6 @@ closeHeaderPopup();
 // закртиые всех попапов кликом на esc
 function closePopupOnEsc(evt) {
     if (evt.key === 'Escape') {
-        closeAllPopups();
         closeHeaderPopup();
     }
 };
@@ -180,4 +117,14 @@ navigationMobilePopup.forEach((element) => {
         element.querySelector('.popup-header__li').classList.toggle('popup-header__li_activ')
     })
 });
+
+
+// кнопка удаления из избранного
+const favoriteButtons = document.querySelectorAll('.card-favorite__like');
+favoriteButtons.forEach((favoriteButton) => {
+    favoriteButton.addEventListener('click', function (evt) {
+        evt.currentTarget.classList.toggle('card-favorite__dislike')
+    })
+});
+
 

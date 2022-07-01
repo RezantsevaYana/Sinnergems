@@ -1,0 +1,220 @@
+.card-favorite {
+    width: 417px;
+    height: 417px;
+    background-color: #1D1D1D;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+}
+.card-favorite__border {
+    width: 100%;
+    height: 100%;
+    background: #1D1D1D;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-image: linear-gradient(to top,rgba(185, 167, 117, 1),rgba(185, 167, 117, 0));
+    -moz-border-image: -moz-linear-gradient(bottom, rgba(185, 167, 117, 1) , rgba(185, 167, 117, 0));
+    -webkit-border-image: -webkit-linear-gradient(bottom, rgba(185, 167, 117, 1) , rgba(185, 167, 117, 0));
+    border-image-slice: 1;
+    border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 25px 24px 25px;
+}
+.card-favorite::after {
+    display: flex;
+    content: " ";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    border: 2px solid rgba(185, 167, 117, 1);
+    border-top: 0px;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    border-radius: 0 0 14px 14px;
+}
+.card-favorite__img {
+    width: 256px;
+    height: 267px;
+    object-fit: contain;
+    margin: 19px 0 30px;
+}
+.card-favorite-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-favorite__price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.7113px;
+    line-height: 26px;
+    color: #B9A775;
+    margin: 0;
+}
+.card-favorite__like {
+    background-image: url('../../images/likeFavoriteFill.svg');
+    width: 18px;
+    height: 18px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.card-favorite__dislike {
+    background-image: url('../../images/likeFavorite.svg');
+}
+.card-favorite__like:hover {
+    cursor: pointer;
+}
+.card-favorite-btn__block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-favorite__btn {
+    border: none;
+    padding: 0;
+    width: 112px;
+    height: 25px;
+    background: #B9A775;
+    border-radius: 5px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1D1D1D;
+}
+.card-favorite__btn:hover {
+    cursor: pointer;
+}
+.card__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.card__button-logo-setting {
+    background-image: url(../../images/setting.svg);
+    width: 19px;
+    height: 18px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-right: 10px;
+}
+.card__button-text-setting {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #B9A775;
+    margin: 0;
+}
+
+@media screen and (max-width: 1285px) {
+    .card-favorite {
+        width: 284px;
+        height: 284px;
+        background-color: #1D1D1D;
+        border-radius: 14px;
+        overflow: hidden;
+        position: relative;
+    }
+    .card-favorite__border {
+        padding: 17px 16px 16px 16px;
+    }
+    .card-favorite__img {
+        width: 174px;
+        height: 181px;
+        object-fit: contain;
+        margin: 12px 0 20px;
+    }
+    .card-favorite__price {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .card-favorite__like {
+        width: 12px;
+        height: 12px;;
+    }
+    .card-favorite__btn {
+        width: 76px;
+        height: 17px;
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .card__button-logo-setting {
+        width: 10px;
+        height: 10px;
+        margin-right: 6px;
+    }
+    .card__button-text-setting {
+        font-size: 8px;
+        line-height: 10px;
+    }
+}
+@media screen and (max-width: 982px) {
+    .card-favorite {
+        width: 329px;
+        height: 329px;
+    }
+    .card-favorite__border {
+        padding: 20px 18px 18px 19px;
+    }
+    .card-favorite__img {
+        width: 202px;
+        height: 210px;
+        object-fit: contain;
+        margin: 14px 0 23px;
+    }
+    .card-favorite__price {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    .card-favorite__like {
+        width: 14px;
+        height: 14px;;
+    }
+    .card-favorite__btn {
+        width: 89px;
+        height: 20px;
+        font-size: 9px;
+        line-height: 12px;
+    }
+    .card__button-logo-setting {
+        width: 12px;
+        height: 12px;
+        margin-right: 8px;
+    }
+    .card__button-text-setting {
+        font-size: 9px;
+        line-height: 12px;
+    }
+    
+}
+
+
+

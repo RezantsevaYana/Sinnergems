@@ -2,10 +2,14 @@
 @import url(../fonts/fonts.css);
 @import url(../blocks/body/body.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/content-favorite/content-favorite.css);
+@import url(../blocks/information/information.css);
+@import url(../blocks/card-favorite/card-favorite.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/navigation/navigation.css);
 @import url(../blocks/logo/logo.css);
 @import url(../blocks/footer/footer.css);
+@import url(../blocks/popup-header/popup-header.css);
 
 
