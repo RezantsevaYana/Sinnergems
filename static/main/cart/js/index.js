@@ -139,7 +139,7 @@ function closePopupOnEsc(evt) {
     }
 };
 
-
+// закрытие попапов кликом на оверлей
 // закрытие попапов с результатами оплаты кликом на оверлей
 function closePopupOnOverlay() { 
     const popups = document.querySelectorAll('.popup-container'); 
@@ -166,9 +166,8 @@ function closePopupHeaderOnOverlay() {
             closeHeaderPopup();
         } 
     }); 
-
 }
-closePopupHeaderOnOverlay()
+closePopupHeaderOnOverlay();
 
 
 

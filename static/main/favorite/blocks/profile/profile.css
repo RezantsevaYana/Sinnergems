@@ -1,0 +1,43 @@
+.profile {
+    width: 100%;
+    margin: 0;
+    padding: 36px 0 57px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.profile__info {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #C4C4C4;
+}
+
+
+@media screen and (max-width: 660px) {
+    .profile {
+        padding: 43px 0 37px;
+    }
+
+    .profile__info {
+        font-size: 26px;
+        line-height: 29px;
+    } 
+}
+
+@media screen and (max-width: 520px) {
+    .profile {
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .profile__info:last-of-type {
+        margin-top: 10px;
+    }
+ 
+}
