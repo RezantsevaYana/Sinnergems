@@ -73,7 +73,7 @@
     background-position: center;
 }
 .card-favorite__dislike {
-    background-image: url('../../images/likeFavorite.svg');
+    background-image: url(../../images/likeFavorite.svg);
 }
 .card-favorite__like:hover {
     cursor: pointer;
