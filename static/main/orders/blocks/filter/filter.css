@@ -65,3 +65,20 @@ input[type="checkbox" i] {
     color: #B9A775;
     margin: 0;
 }
+
+@media screen and (max-width: 637px) {
+    .filter__checkbox-slider {
+        width: 27px;
+        height: 14px;
+        margin-right: 18px;
+    }
+    .filter__checkbox-slider::before {
+        width: 12px;	
+        height: 12px;
+    }
+    .filter__text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+}

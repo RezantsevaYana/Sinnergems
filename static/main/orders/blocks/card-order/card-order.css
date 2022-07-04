@@ -1,42 +1,24 @@
 .card-order {
     width: 633px;
     height: 598px;
-    background-color: #1D1D1D;
     border-radius: 14px;
-    overflow: hidden;
     position: relative;
+    background: linear-gradient(0.06deg, #B9A775 0.06%, rgba(185, 167, 117, 0) 80.09%);
 }
 .card-order__border {
-    width: 100%;
-    height: 100%;
+    height: 99.9%;
     background: #1D1D1D;
     box-sizing: border-box;
-    border: 2px solid;
-    border-image: linear-gradient(to top,rgba(185, 167, 117, 1),rgba(185, 167, 117, 0));
-    -moz-border-image: -moz-linear-gradient(bottom, rgba(185, 167, 117, 1) , rgba(185, 167, 117, 0));
-    -webkit-border-image: -webkit-linear-gradient(bottom, rgba(185, 167, 117, 1) , rgba(185, 167, 117, 0));
-    border-image-slice: 1;
-    border-radius: 14px;
-
+    
+    border-radius: 0 0 14px 14px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     padding: 36px 35px 49px 46px;
-}
-.card-order::after {
-    display: flex;
-    content: " ";
-    position: absolute;
-    height: 20px;
-    width: 100%;
-    border: 2px solid rgba(185, 167, 117, 1);
-    border-top: 0px;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-    z-index: 2;
-    border-radius: 0 0 14px 14px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: -2px;
 }
 .order-information {
     position: absolute;
@@ -158,11 +140,9 @@
 .order-items::-webkit-scrollbar  {
     display: none;
 }
-
 .order-items::-webkit-scrollbar-track {
     display: none;
 }
-
 .order-items::-webkit-scrollbar-thumb {
     display: none;
 }
@@ -246,7 +226,6 @@
     color: #FFFFFF;
     margin: 0;
 }
-
 .order__button {
     display: flex;
     flex-direction: row;
@@ -294,7 +273,6 @@
     position: absolute;
     bottom: 57px;
     right: 35px;
-
 }
 .form__result-ask {
     background-image: url(../../images/askOrder.svg);
@@ -305,7 +283,7 @@
     align-self: center;
     background-repeat: no-repeat;
     background-color: transparent;
- 
+    position: relative;
 }
 .form__result_ask-bloc:hover {
     cursor: pointer;
@@ -317,9 +295,9 @@
     opacity: 0;
 
     position: absolute;
-    left: -100px; 
-    top: -100px;
-    transition: 1s;
+    left: -200px; 
+    top: -200px;
+    z-index: 2;
 
     width: 223px;
     height: 80px;
@@ -342,6 +320,7 @@
 .form__result_ask-bloc:hover::after {
     opacity: 1;
     top: 2em;
+    z-index: 2;
 }
 .form__result-text {
     font-family: 'Montserrat';
@@ -355,34 +334,337 @@
     margin: 0;
 }
 
-
-
-
-
-
-
-@media screen and (max-width: 1285px) {
-    .card-favorite {
-        width: 284px;
-        height: 284px;
-        background-color: #1D1D1D;
-        border-radius: 14px;
-        overflow: hidden;
+@media screen and (max-width: 1317px) {
+    .card-order {
+        width: 897px;
+        height: 598px;
+    }
+    .card-order__border {
+        padding: 36px 42px 49px 50px;
+    }
+    .order-item {
+        width: 125px;
+        height: 129px;
+        margin-right: 66px;
+    }
+    .order-items__gradient {
+        width: 523px;
+        height: 157px;
+        margin-top: 76px;
         position: relative;
     }
-    .card-favorite__border {
-        padding: 17px 16px 16px 16px;
+    .order-items__count {
+        font-size: 21px;
+        line-height: 27px;
+        position: absolute;
+        top: 65px;
+        right: 62px;
+    }
+    .order-items__gradient::after {
+        width: 150px;
+    }
+    .order-user-information {
+        margin: 26px 0 32px;
+        display: grid;
+        grid-template-columns: 23px 336px;
+        grid-template-rows: 23px 23px;
+        row-gap: 18px;
+        column-gap: 13px;
+    }
+    .order__info {
+        display: grid;
+        grid-template-columns: 97px 148px;
+        grid-template-rows: 34px 20px;
+        row-gap: 18px;
+        column-gap: 48px;
+     }
+     .order__result-text {
+         font-size: 18px;
+         line-height: 22px;
+     }
+     .order__button {
+        padding: 11px 32px 11px 29px;
+        height: 40px;
+        width: 189px;
+        background-color: #B9A775;
+        bottom: 49px;
+        left: 50px;
+    }
+    .order__button-logo-setting {
+        width: 121px;
+        height: 20px;
+    }
+    .order__button-text-setting {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .form__result_ask-bloc {
+        width: 147px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        position: absolute;
+        bottom: 57px;
+        right: 35px;
+    }
+    .form__result-ask {
+        width: 32px;
+        height: 32px;
+    }
+    .form__result-text {
+
+        font-size: 19px;
+        line-height: 23px;
     }
 }
-@media screen and (max-width: 982px) {
-    .card-favorite {
-        width: 329px;
-        height: 329px;
+
+@media screen and (max-width: 955px) {
+    .card-order {
+        width: 100%;
+        height: 598px;
     }
-    .card-favorite__border {
-        padding: 20px 18px 18px 19px;
+    .card-order__border {
+        padding: 37px 46px 49px 50px;
+    }
+    .order-information {
+        position: absolute;
+        top: 37px;
+        left: 50px;
+    }
+    .order-number {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .order-date {
+        margin: 3px 0 0;
+    }
+    .order-delivery {
+        position: absolute;
+        top: 40px;
+        right: 46px;
+    }
+    .order-item {
+        width: 79px;
+        height: 82px;
+        margin-right: 42px;
+    }
+    .order-items__gradient {
+        width: 332px;
+        height: 100px;
+        margin-top: 72px;
+        position: relative;
+    }
+    .order-items__count {
+        font-size: 14px;
+        line-height: 17px;
+        position: absolute;
+        top: 41px;
+        right: 41px;
+    }
+    .order-items__gradient::after {
+        width: 100px;
+    }
+    .order-user-information {
+        margin: 57px 0 48px;
+        display: grid;
+        row-gap: 23px;
+        column-gap: 13px;
+    }
+    .order__info {
+        display: grid;
+        grid-template-columns: 79px 148px;
+        grid-template-rows: 34px 20px;
+        row-gap: 20x;
+        column-gap: 53px;
+     }
+     .order__result-text {
+         font-size: 16px;
+         line-height: 20px;
+     }
+     .order__button {
+        padding: 11px 32px 10px 27px;
+        height: 40px;
+        width: 189px;
+        background-color: #B9A775;
+    }
+    .order__button-logo-setting {
+        width: 19px;
+        height: 18px;
+    }
+    .order__button-text-setting {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .form__result_ask-bloc {
+        width: 110px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+        position: absolute;
+        bottom: 57px;
+        right: 46px;
+    }
+    .form__result-ask {
+        width: 24px;
+        height: 24px;
+    }
+    .form__result-text {
+
+        font-size: 14px;
+        line-height: 17px;
     }
 }
+@media screen and (max-width: 768px) {
+    .card-order {
+        width: 683px;
+        height: 598px;
+    }
+}
+@media screen and (max-width: 740px) {
+    .card-order {
+        width: 610px;
+        height: 598px;
+    }
+}
+@media screen and (max-width: 674px) {
+    .card-order {
+        width: 590px;
+        height: 598px;
+    }
+}
+
+@media screen and (max-width: 637px) {
+    .card-order {
+        width: 100%;
+        height: 448px;
+    }
+    .card-order__border {
+        padding: 25px 28px 23px 27px;
+    }
+    .order-information {
+        position: absolute;
+        top: 25px;
+        left: 27px;
+    }
+    .order-number {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .order-date {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .order-delivery {
+        position: absolute;
+        width: 119px;
+        top: 26px;
+        right: 28px;
+    }
+    .order-delivery__text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .order-item {
+        width: 77px;
+        height: 80px;
+        margin-right: 25px;
+    }
+    .order-items__gradient {
+        width: 294px;
+        height: 95px;
+        margin-top: 62px;
+        position: relative;
+    }
+    .order-items__count {
+        font-size: 13px;
+        line-height: 16px;
+        position: absolute;
+        top: 39px;
+        right: 37px;
+    }
+    .order-items__gradient::after {
+        width: 100px;
+    }
+    .order-user-information {
+        margin: 40px 0 36px;
+        display: grid;
+        grid-template-columns: 18px 224px;
+        grid-template-rows: 14px 14px;
+        row-gap: 18px;
+        column-gap: 11px;
+    }
+    .order-user-information__text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .order-user-information__img {
+        width: 18px;
+        height: 14px;
+    }
+    .order__info {
+        display: grid;
+        grid-template-columns: 69px 105px;
+        grid-template-rows: 27px 27px;
+        row-gap: 16px;
+        column-gap: 38px;
+     }
+     .order__result-text {
+         font-size: 14px;
+         line-height: 17px;
+     }
+     .order__result-price {
+        font-size: 22px;
+        line-height: 27px;
+    }
+     .order__button {
+        padding: 6px 14px 5px 18px;
+        height: 25px;
+        width: 127px;
+        background-color: #B9A775;
+        bottom: 23px;
+        left: 27px;
+    }
+    .order__button-logo-setting {
+        width: 13px;
+        height: 12px;
+    }
+    .order__button-text-setting {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .form__result_ask-bloc {
+        width: 84px;
+    
+        bottom: 28px;
+        right: 28px;
+    }
+    .form__result-ask {
+        width: 16px;
+        height: 16px;
+    }
+    .form__result-text {
+
+        font-size: 11px;
+        line-height: 13px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .card-order {
+        width: 372px;
+        height: 448px;
+    }
+}
+
+
+
+
+
+
+
 
 
 
