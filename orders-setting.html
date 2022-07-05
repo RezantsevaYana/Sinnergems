@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройка заказов</title>
+    <link rel="stylesheet" href="static/main/orders-setting/css/index.css">
+</head>
+
+<body class="body">
+    <div class="page">
+
+        <header class="header">
+            <a href="#">
+                <div class="logo"></div>
+            </a>
+            <ul class="header__links">
+                <li><a class="header__link">каталог</a></li>
+                <li><a class="header__link">конструктор</a></li>
+                <li><a class="header__link">контакты</a></li>
+                <li><a class="header__link">личный кабинет</a></li>
+            </ul>
+            <div class="header__icons">
+                <button class="header__button header__button_profile header__button_profile_active"
+                    type="button"></button>
+                <button class="header__button header__button_like" type="button">21</button>
+                <button class="header__button header__button_bag" type="button">
+                    <div class="count">21</div>
+                </button>
+            </div>
+            <button class="mobile-header__button"></button>
+        </header>
+
+        <main>
+
+            <section class="profile">
+                <p class="profile__info">егор остафьев</p>
+                <p class="profile__info">ostafiev3@gmail.com</span></p>
+            </section>
+
+            <section class="navigation">
+                <ul class="navigation__links">
+                    <li><a class="navigation__link">корзина <span>(3)</span></a></li>
+                    <li><a class="navigation__link">избранное <span>(4)</span></a></li>
+                    <li><a class="navigation__link navigation__link_active">заказы <span></span></a></li>
+                    <li class="navigation__orders-number">6678453</li>
+                </ul>
+            </section>
+
+            <section class="content">
+
+
+                <div class="content-cards">
+                    <!-- карточка с выезжающим списком -->
+                    <article class="card-list">
+                        <button class="card-delete"></button>
+                        <!-- карточка  -->
+                        <div class="card">
+                            <div class="card__border">
+                                <div class="card__image-mobile">
+                                    <img src="static/main/orders-setting/images/tovar.png" alt="карточка товара"
+                                        class="card__image">
+                                </div>
+                                <div class="card__information">
+                                    <h2 class="card__title">
+                                        Модель с чёрным жемчугом / <span>35</span> см / <span>30</span> шт
+                                    </h2>
+
+                                    <ul class="card__description">
+                                        <li class="card__description-text">
+                                            <div class="description-text-left">Длина</div>
+                                            <div class="description-text-dotted"></div>
+                                            <div class="description-text-right">50&thinsp;см</div>
+                                        </li>
+                                        <li class="card__description-text">
+                                            <div class="description-text-left">Кол-во бусин</div>
+                                            <div class="description-text-dotted"></div>
+                                            <div class="description-text-right">35&thinsp;шт</div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card__price-container">
+                                        <p class="card__price">&dollar; <span>1000</span></p>
+                                        <div class="card__buttons-mobile">
+                                            <button class="card__button">
+                                                <div class="card__button-logo"></div>
+                                                <p class="card__button-text">Подробности</p>
+                                            </button>
+                                            <a href='#' class="card__link">
+                                                <div class="card__button-logo-setting"></div>
+                                                <p class="card__button-text-setting">Настроить</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- вылезающй список  -->
+                        <div class="list-gradient">
+                            <ul class="list">
+                                <li class="list__item">
+                                    <img class="list__item-img" src="static/main/orders-setting/images/tovar1.png"
+                                        alt="элемент товара">
+                                    <div class="list__item-about">
+                                        <div class="list__item-text">
+                                            <p class="list__item-title">Литая бусина</p>
+                                            <p class="list__item-country">&bull; <span>Филиппины</span></p>
+                                        </div>
+                                        <div class="list__item-quantity">23</div>
+                                    </div>
+                                </li>
+                                <li class="list__item">
+                                    <img class="list__item-img" src="static/main/orders-setting/images/tovar2.png"
+                                        alt="элемент товара">
+                                    <div class="list__item-about">
+                                        <div class="list__item-text">
+                                            <p class="list__item-title">Каменная бусина</p>
+                                            <p class="list__item-country">&bull; <span>Африка</span></p>
+                                        </div>
+                                        <div class="list__item-quantity">1</div>
+                                    </div>
+                                </li>
+                                <li class="list__item">
+                                    <img class="list__item-img" src="static/main/orders-setting/images/tovar3.png"
+                                        alt="элемент товара">
+                                    <div class="list__item-about">
+                                        <div class="list__item-text">
+                                            <p class="list__item-title">Литая бусина</p>
+                                            <p class="list__item-country">&bull; <span>Филиппины</span></p>
+                                        </div>
+                                        <div class="list__item-quantity">5</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <!--     <button class="content__button">&plus;добавить модель в конструкторе</button> -->
+
+                <div class="content-form">
+                    <h2 class="form-title__mobile">оформление заказа</h2>
+                    <div class="form" id="form">
+                            <div class="order-status">
+                                <p class="order-status__text">Заказ доставлен</p>
+                                <div class="order-status__img order-status__img_active"></div>
+                            </div>
+                            <div class="order-information__container">
+                                <div class="order-information__title">
+                                    <div class="order-information__img order-information__img_delivery"></div>
+                                    <p class="order-information__text">Адрес доставки</p>
+                                </div>
+                                <p class="order-information__user">Санкт-Петербург, Литейный пр-т 15</p>
+                                <a href="#" class="order-information__link">Отслеживание доставки</a>
+                                <div class="order-information__title">
+                                    <div class="order-information__img order-information__img_user"></div>
+                                    <p class="order-information__text">Получатель</p>
+                                </div>
+                                <p class="order-information__user">Остафьев Егор</p>
+                            </div>
+                            <div class="order__info">
+                                <p class="order__result-text">Итог:</p>
+                                <p class="order__result-price">&dollar; <span>2 000</span></p>
+    
+                                <div class="order__result_ask-bloc">
+                                    <p class="order__result-text">Оплачен:</p>
+                                </div>
+                                <label class="filter">
+                                    <input class="filter__checkbox" type="checkbox"></input>
+                                    <span class="filter__checkbox-slider"></span>
+                                    <p class="filter__text">Чек</p>
+                                </label>
+                            </div>
+                            <div class="order-information-btn__container">
+
+                                <div class="form__result_ask-bloc"
+                                    data-tooltip="Вы можете отправить заказ без оплаты, наш менеджер свяжется с вами и оформит заказ в частном порядке.">
+                                    <div class="form__result-ask"></div>
+                                    <p class="form__result-text">помощь</p>
+                                </div>
+
+                                <button class="order__button">
+                                    <div class="order__button-logo-delete"></div>
+                                    <p class="order__button-text-delete">Удалить</p>
+                                </button>
+                            </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__gradient">
+                <a href="#">
+                    <div class="logo-footer"></div>
+                </a>
+                <div class="copyright-container">
+                    <p class="copyright-container__text">&copy; 2022, SINNERGEMS</p>
+                    <p class="copyright-container__text">Обработка персональных данных</p>
+                </div>
+            </div>
+            <a class="footer__icon" href="#"></a>
+        </footer>
+    </div>
+
+    <!-- попап c шапкой для мобильной версии -->
+    <section class="popup-header-container">
+        <div class="popup-header">
+            <button class="popup__close popup__close_header-popup" type="button"></button>
+            <ul class="popup-header__items">
+                <a href="#" class="item-link">
+                    <li class="popup-header__item">
+                        <div class="popup-header__li"></div>главная
+                    </li>
+                </a>
+                <a href="#" class="item-link">
+                    <li class="popup-header__item">
+                        <div class="popup-header__li"></div>конструктор
+                    </li>
+                </a>
+                <a href="#" class="item-link">
+                    <li class="popup-header__item">
+                        <div class="popup-header__li"></div>личный кабинет
+                    </li>
+                </a>
+                <a href="#" class="item-link">
+                    <li class="popup-header__item">
+                        <div class="popup-header__li"></div>контакты
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </section>
+
+    <script src="static/main/orders-setting/js/index.js"></script>
+</body>

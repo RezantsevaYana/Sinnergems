@@ -1,0 +1,53 @@
+@font-face { 
+    font-family: "Montserrat";
+    src: url("./Montserrat/MontserratSemiBold/MontserratSemiBold.eot");
+    src: url("./Montserrat/MontserratSemiBold/MontserratSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("./Montserrat/MontserratSemiBold/MontserratSemiBold.woff") format("woff"),
+    url("./Montserrat/MontserratSemiBold/Montserrat-Bold.woff2") format("woff2"),
+    url("./Montserrat/MontserratSemiBold/MontserratSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face { 
+    font-family: "Montserrat";
+    src: url("./Montserrat/MontserratMedium/MontserratMedium.eot");
+    src: url("./Montserrat/MontserratMedium/MontserratMedium.eot?#iefix")format("embedded-opentype"),
+    url("./Montserrat/MontserratMedium/MontserratMedium.woff") format("woff"),
+    url("./Montserrat/MontserratMedium/Montserrat-Medium.woff2") format("woff2"),
+    url("./Montserrat/MontserratMedium/MontserratMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face { 
+    font-family: "Montserrat";
+    src: url("./Montserrat/MontserratRegular/MontserratRegular.eot");
+    src: url("./Montserrat/MontserratRegular/MontserratRegular.eot?#iefix")format("embedded-opentype"),
+    url("./Montserrat/MontserratRegular/MontserratRegular.woff") format("woff"),
+    url("./Montserrat/MontserratRegular/Montserrat-Regular.woff2") format("woff2"),
+    url("./Montserrat/MontserratRegular/MontserratRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "Forum";
+    src: url("./Forum/ForumRegular/ForumRegular.eot");
+    src: url("./Forum/ForumRegular/ForumRegular.eot?#iefix")format("embedded-opentype"),
+    url("./Forum/ForumRegular/ForumRegular.woff") format("woff"),
+    url("./Forum/ForumRegular/ForumRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "Roboto";
+    src: url("./Roboto/RobotoRegular/RobotoRegular.eot");
+    src: url("./Roboto/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("./Roboto/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("./Roboto/RobotoRegular/Roboto-Regular.woff2") format("woff2"),
+    url("./Roboto/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
