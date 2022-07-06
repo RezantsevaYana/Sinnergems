@@ -19,8 +19,23 @@
     background-color: #171717;
     padding: 58px 0 0 50px;
     box-sizing: border-box;
+}
 
+.popup__close {
+    background-image: url(../../images/popup-close.svg);
+    background-color: transparent;
+    width: 16px;
+    height: 17px;
+    background-size: cover;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+}
 
+.popup__close {
+    cursor: pointer;
 }
 /*
 .popup-header {
@@ -101,6 +116,18 @@
 .item-link {
     outline: none;
     text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+    .popup__close {
+        width: 9px;
+        height: 10px;
+        top: 18px;
+        right: 29px;
+    }
 }
 
 

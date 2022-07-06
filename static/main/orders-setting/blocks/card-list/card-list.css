@@ -396,9 +396,13 @@
         justify-content: space-around;
     }
     .list {
-        width: 829px;
+        width: 790px;
+        margin: -187px 54.23px 33px 52px;
     }
-    
+    .list_opened {
+        margin-top: 26px;
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 981px) {
@@ -485,7 +489,7 @@
 @media screen and (max-width: 700px) {
     .card-list {
         width: 375px;
-        margin: 0;
+        margin: auto;
     }
 
     .card {
@@ -667,4 +671,3 @@
         line-height: 18px;
     }
 }
-
