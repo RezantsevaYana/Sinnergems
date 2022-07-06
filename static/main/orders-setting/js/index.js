@@ -1,3 +1,21 @@
+// всплывающий список с подробной информацией о карточке
+const cards = document.querySelectorAll('.card-list');
+
+function listOpen(e) {
+    //   console.log(e.target)
+    //   console.log(this.querySelector('.list'))
+    const list = this.querySelector('.list')
+    const button = this.querySelector('.card__button-logo')
+    const gradient = this.querySelector('.list-gradient')
+    list.classList.toggle("list_opened");
+    button.classList.toggle("card__button-logo_active")
+    gradient.classList.toggle('list-gradient_opened')
+}
+
+cards.forEach((card) => {
+    card.querySelector('.card').addEventListener('click', listOpen.bind(card))
+})
+
 // активные ссылки в блоке навигации
 const navigation = document.querySelectorAll('.navigation__link')
 
