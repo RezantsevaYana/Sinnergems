@@ -9,7 +9,6 @@
     width: 792px;
     position: relative;
 }
-
 .card-delete {
     position: absolute;
     background-image: url('../../images/delete.svg');
@@ -22,11 +21,9 @@
     border: none;
     padding: 0;
 }
-
 .card-delete:hover {
     cursor: pointer;
 }
-
 .card {
     width: 792px;
     border-radius: 20px;
@@ -34,8 +31,6 @@
     position: relative;
     z-index: 1;
 }
-
-
 .card__border {
     width: 100%;
     height: 294px;
@@ -54,7 +49,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .card::after {
     display: flex;
     content: " ";
@@ -68,12 +62,9 @@
     z-index: 2;
     border-radius: 20px 0 0 20px;
 }
-
 .card:hover {
     cursor: pointer;
 }
-
-
 .card__button {
     display: flex;
     flex-direction: row;
@@ -86,18 +77,15 @@
     border: none;
     margin-right: 36.53px;
 }
-
 .card__button:hover {
     cursor: pointer;
 }
-
 .card__buttons-mobile {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-
 .card__button-logo {
     background-image: url(../../images/popapclosed.svg);
     width: 19px;
@@ -108,11 +96,9 @@
     background-color: transparent;
     margin-right: 18px;
 }
-
 .card__button-logo_active {
     transform: rotate(180deg);
 }
-
 .card__button-logo-setting {
     background-image: url(../../images/setting.svg);
     width: 19px;
@@ -123,7 +109,6 @@
     background-color: transparent;
     margin-right: 10px;
 }
-
 .card__button-text {
     font-family: 'Montserrat';
     font-style: normal;
@@ -134,7 +119,6 @@
     color: #FFFFFF;
     margin: 0;
 }
-
 .card__button-text-setting {
     font-family: 'Montserrat';
     font-style: normal;
@@ -145,14 +129,12 @@
     color: #B9A775;
     margin: 0;
 }
-
 .card__description {
     margin: 18px 0 44px;
     list-style: none;
     padding: 0;
     width: 214px;
 }
-
 .card__description-text {
     width: 213px;
     margin: 0;
@@ -167,31 +149,23 @@
     flex-direction: row;
     justify-content: space-between;
 }
-
 .description-text-left {
     white-space: nowrap;
 }
-
-.description-text-dotted {
+.description-text-dashed {
     content: " ";
     display: inline-block;
-    border-bottom: 1px dotted grey;
+    border-bottom: 1px dashed grey;
     width: 100%;
     align-self: center;
     margin: 0 7px 0;
-
-
 }
-
 .description-text-right {
-    white-space: nowrap;
-    
+    white-space: nowrap;  
 }
-
 .card__description-text:last-of-type {
     margin-top: 11px;
 }
-
 .border-list {
     width: 99.5px;
     height: 0px;
@@ -199,24 +173,20 @@
     align-self: center;
     margin: 0 7px 0;
 }
-
 .border-list:last-of-type {
     width: 43px;
 }
-
 .card__image {
     width: 212.22px;
     height: 221px;
     object-fit: contain;
 }
-
 .card__information {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: start;
 }
-
 .card__link {
     display: flex;
     flex-direction: row;
@@ -226,7 +196,6 @@
     padding: 0;
     text-decoration: none;
 }
-
 .card__price {
     font-family: 'Montserrat';
     font-style: normal;
@@ -236,7 +205,6 @@
     color: #FFFFFF;
     margin: 0;
 }
-
 .card__price-container {
     width: 100%;
     margin: 0;
@@ -245,7 +213,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .card__title {
     margin: 0;
     font-family: 'Forum';
@@ -259,7 +226,6 @@
     width: 437px;
     height: 70px;
 }
-
 .list {
     background: linear-gradient(to top, rgba(29, 29, 29, 1), rgba(29, 29, 29, 0));
     width: 691px;
@@ -276,24 +242,18 @@
     transition: all ease-in-out 0.8s;
     opacity: 0;
 }
-
 .list-gradient {
     position: relative;
     opacity: 0;
     transition: all ease-in-out 0.8s;
 }
-
 .list-gradient_opened {
     opacity: 1;
 }
-
-
-
 .list_opened {
     margin-top: 22px;
     opacity: 1;
 }
-
 .list-gradient::after {
     display: flex;
     content: " ";
@@ -304,24 +264,19 @@
     height: 150px;
     pointer-events: none;
 }
-
-
 .list::-webkit-scrollbar  {
     width: 10px;
 }
-
 .list::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 10px 10px #515151;
             box-shadow: inset 0 0 10px 10px #515151;;
     border: solid 3px transparent;
 }
-
 .list::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 10px 10px rgba(104, 104, 104, 1);
             box-shadow: inset 0 0 10px 10px rgba(104, 104, 104, 1);
     border: solid 3px transparent;
 }
-
 .list__item {
     width: 638px;
     display: flex;
@@ -330,14 +285,12 @@
     align-items: center;
     margin-bottom: 16.2px;
 }
-
 .list__item-about {
     display: flex;
     flex-direction: row;
     width: 575px;
     justify-content: space-between;
 }
-
 .list__item-country {
     font-family: 'Roboto';
     font-style: normal;
@@ -347,12 +300,10 @@
     color: #959595;
     margin: 3.15px 0 0;
 }
-
 .list__item-img {
     width: 37px;
     background-size: contain;
 }
-
 .list__item-quantity {
     width: 27px;
     height: 27px;
@@ -370,7 +321,6 @@
     text-transform: uppercase;
     color: #B9A775;
 }
-
 .list__item-title {
     margin: 0;
     font-family: 'Montserrat';
@@ -380,7 +330,6 @@
     line-height: 16px;
     color: #FFFFFF;
 }
-
 @media screen and (max-width: 1350px) {
     .card-list {
         width: 100%;
@@ -388,12 +337,57 @@
     .card {
         width: 100%;
     }
+    .card__information {
+        width: 553px;
+    }
+    .card__description {
+        margin: 18px 0 40px;
+        width: 280px;
+    }
+    .card__description-text {
+        width: 100%;
+    }
+    .card__price {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .card__buttons-mobile {
+        width: 325px;
+        justify-content: space-between;
+    }
+    .card__button {
+        width: 152px;
+        margin-right: 0;
+    }
+    .card__button-logo {
+        margin: 0;
+    }
+    .card__button-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .card__link {
+        width: 123px;
+    }
+    .card__button-logo-setting {
+        width: 20px;
+        height: 20px;
+        margin-right: 0;
+    }
+    .card__button-text-setting {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
     .card::after {
         width: 20px;
     }
     .card__border {
         padding: 35px 38px 47px 41px;
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    .card__information {
+        width: 70%;
     }
     .list {
         width: 790px;
@@ -404,22 +398,64 @@
         opacity: 1;
     }
 }
-
-@media screen and (max-width: 981px) {
-    .list {
-        width: 700px;
+@media screen and (max-width: 1000px) {
+    .card-list {
+        margin-bottom: 23px;
+        width: 683px;
+        margin: auto;
     }
-}
-
-@media screen and (max-width: 900px) {
-    .list {
-        width: 700px;
+    .card__border {
+        height: 333px;
+        padding: 39px 38px 29px 26px;
+        justify-content: space-between;
+        align-items: start;
     }
-}
-
-@media screen and (max-width: 892px) {
+    .card__information {
+        width: 384px;
+    }
+    .card__description {
+        margin: 18px 0 33px;
+        width: 190px;
+    }
+    .card__price-container {
+        flex-direction: column;
+        align-items: start;
+    }
+    .card__price {
+        font-size: 30px;
+        line-height: 37px;
+        margin-bottom: 29px;
+    }
+    .card__buttons-mobile {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .card__button-text {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .card__button {
+        width: 140px;
+    }
+    .card__link {
+        flex-direction: row-reverse;
+        width: 109px;
+    }
+    .card__button-logo-setting {
+        width: 18px;
+        height: 21px;
+        margin-right: 0;
+    }
+    .card__button-text-setting {
+        font-size: 12px;
+        line-height: 15px;
+    }
     .list {
         width: 631px;
+        margin-right: 45px;
+        margin-bottom: 33px;
+        margin-left: 40px;
+
     }
     .list__item {
         width: 90%;
@@ -429,46 +465,12 @@
         width: 90%;
     }
 }
-
-@media screen and (max-width: 824px) {
-    .card__title {
-        width: 380px;
-    }
-    
-}
-@media screen and (max-width: 815px) {
-    .card__border {
-        padding: 39px 38px 29px 26px;
-        justify-content: space-between;
-        height: 333px;
-    }
-    .card__description {
-        margin: 30px 0 33px;
-    }
-    .card__price-container {
-        flex-direction: column;
-        align-items: start;
-    }
-    .card__price {
-        margin-bottom: 29px;
-    }
-    .card-list {
-        width: 683px;
-    }
-}
 @media screen and (max-width: 787px) {
     .list {
         margin-right: 30px;
         margin-bottom: 33px;
         margin-left: 20px;
     }
-    .card__buttons-mobile {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    
 }
 @media screen and (max-width: 760px) {
     .card-list {
@@ -476,26 +478,40 @@
     }
 }
 @media screen and (max-width: 748px) {
+    .card-list {
+        width: 650px;
+    }
+    .card__title {
+        font-size: 24px;
+        line-height: 27px;
+        align-self: center;
+        height: 54px;
+        width: 333px;
+    }
+    .card__information {
+        width: 350px;
+    }
     .list {
         margin-right: 20px;
         margin-bottom: 33px;
         margin-left: 15px;
     }
 }
-
-
-
-
+@media screen and (max-width: 739px) {
+    .list {
+        margin-right: 0px;
+        margin-bottom: 33px;
+        margin-left: 20px;
+    }
+}
 @media screen and (max-width: 700px) {
     .card-list {
         width: 375px;
         margin: auto;
     }
-
     .card {
         width: 375px;
     }
-
     .card__border {
         height: 656px;
         padding: 0;
@@ -505,12 +521,11 @@
         display: flex;
         flex-direction: column;
         justify-content: start;
+        align-items: center;
     }
-
     .card::after {
         display: none;
     }
-
     .card__information::after {
         display: flex;
         content: " ";
@@ -526,7 +541,6 @@
         border-radius: 0 0 20px 20px;
        
     }
-
     .card__image-mobile {
         background-color: #171717;
         border-radius: 20px;
@@ -537,14 +551,12 @@
         justify-content: center;
         align-items: center;   
     }
-
     .card__image {
         width: 90%;
         height: 90%;
         object-fit: contain;
         align-self: center;
     }
-
     .card__information {
         width: 375px;
         height: 300px;
@@ -565,8 +577,6 @@
 
         border-bottom: 0;
     } 
-
-
     .card__title {
         font-size: 24px;
         line-height: 27px;
@@ -574,28 +584,23 @@
         height: 54px;
         width: 333px;
     }
-
     .card__description {
         margin: 22px 0 21px;
         width: 269px;
     }
-
     .border-list {
         width: 147px;
         margin: 0 9px 0 13px;
     }
-    
     .border-list:last-child {
         width: 93.5px;
         margin: 0 9px 0 8px;
     }
-
     .card__price-container {
         width: 100%;
         flex-direction: column;
         align-items: start;
     }
-
     .card__price {
         font-family: 'Montserrat';
         font-style: normal;
@@ -604,18 +609,18 @@
         line-height: 55px;
         margin-bottom: 27px;
     }
-
     .card__buttons-mobile {
         width: 100%;
         justify-content: space-between;
     }
-
     .card__button-logo-setting {
         width: 16px;
         height: 13px;
         margin-right: 9.5px;
     }
-
+    .card__link {
+        flex-direction: row;
+    }
     .list {
         width: 327px;
         max-height: 234px;
@@ -623,44 +628,37 @@
         margin: -251px 18px 17px 30px;
         opacity: 0;
     }
-
     .list_opened {
         margin-top: 32px;
         opacity: 1;
     }
-
     .list__item {
-        width: 296px;
+        width: 295px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 22px;
     }
-
     .list__item-img {
         width: 50px;
         background-size: contain;
     }
-
     .list__item-about {
         display: flex;
         flex-direction: row;
         width: 221px;
         justify-content: space-between;
     }
-
     .list__item-title {
         font-size: 14px;
         line-height: 17px;
     }
-
     .list__item-country {
         font-size: 14px;
         line-height: 16px;
         margin: 4px 0 0;
     }
-
     .list__item-quantity {
         width: 33px;
         height: 33px;
@@ -671,3 +669,4 @@
         line-height: 18px;
     }
 }
+

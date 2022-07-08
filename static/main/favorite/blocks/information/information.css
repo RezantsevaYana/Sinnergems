@@ -13,7 +13,6 @@
     text-transform: uppercase;
     color: #C4C4C4;
 }
-
 @media screen and (max-width: 740px) {
     .information-text {
         width: 60%;
@@ -26,5 +25,5 @@
         align-items: center;
         text-transform: uppercase;
         color: #C4C4C4;
-    }
+   }
 }

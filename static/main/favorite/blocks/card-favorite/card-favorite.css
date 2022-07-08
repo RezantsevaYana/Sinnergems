@@ -17,7 +17,6 @@
     -webkit-border-image: -webkit-linear-gradient(bottom, rgba(185, 167, 117, 1) , rgba(185, 167, 117, 0));
     border-image-slice: 1;
     border-radius: 14px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +91,6 @@
     height: 25px;
     background: #B9A775;
     border-radius: 5px;
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -133,7 +131,6 @@
     color: #B9A775;
     margin: 0;
 }
-
 @media screen and (max-width: 1285px) {
     .card-favorite {
         width: 284px;
@@ -142,78 +139,79 @@
         border-radius: 14px;
         overflow: hidden;
         position: relative;
-    }
+   }
     .card-favorite__border {
         padding: 17px 16px 16px 16px;
-    }
+   }
     .card-favorite__img {
         width: 174px;
         height: 181px;
         object-fit: contain;
         margin: 12px 0 20px;
-    }
+   }
     .card-favorite__price {
         font-size: 14px;
         line-height: 18px;
-    }
+   }
     .card-favorite__like {
         width: 12px;
-        height: 12px;;
-    }
+        height: 12px;
+       ;
+   }
     .card-favorite__btn {
         width: 76px;
         height: 17px;
         font-size: 8px;
         line-height: 10px;
-    }
+   }
     .card__button-logo-setting {
         width: 10px;
         height: 10px;
         margin-right: 6px;
-    }
+   }
     .card__button-text-setting {
         font-size: 8px;
         line-height: 10px;
-    }
+   }
 }
 @media screen and (max-width: 982px) {
     .card-favorite {
         width: 329px;
         height: 329px;
-    }
+   }
     .card-favorite__border {
         padding: 20px 18px 18px 19px;
-    }
+   }
     .card-favorite__img {
         width: 202px;
         height: 210px;
         object-fit: contain;
         margin: 14px 0 23px;
-    }
+   }
     .card-favorite__price {
         font-size: 17px;
         line-height: 21px;
-    }
+   }
     .card-favorite__like {
         width: 14px;
-        height: 14px;;
-    }
+        height: 14px;
+       ;
+   }
     .card-favorite__btn {
         width: 89px;
         height: 20px;
         font-size: 9px;
         line-height: 12px;
-    }
+   }
     .card__button-logo-setting {
         width: 12px;
         height: 12px;
         margin-right: 8px;
-    }
+   }
     .card__button-text-setting {
         font-size: 9px;
         line-height: 12px;
-    }
-    
+   }
 }
 
 

@@ -3,22 +3,19 @@
     align-items: center;
     justify-content: start;
 }
-
 .filter__checkbox {
     display: none;
 }
-
 input[type="checkbox" i] {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding: initial;
     border: initial;
 }
-
 .filter__checkbox-slider {
     position: relative;
     display: inline-block;
-	box-sizing: border-box;
+    box-sizing: border-box;
     box-shadow: none;
     border: 1px solid #B9A775;
     border-radius: 100px;
@@ -29,30 +26,26 @@ input[type="checkbox" i] {
     cursor: pointer;
     margin-right: 23px;
 }
-
 .filter__checkbox-slider::before {
     position: absolute;
     content: '';
     top: 0.5px;
-	left: 0.5px;
+    left: 0.5px;
     display: inline-block;
-    width: 15.43px;	
-	height: 15px;
+    width: 15.43px;
+    height: 15px;
     border-radius: 50%;
-	background: #B9A775;
-	box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-	transition: .15s;
+    background: #B9A775;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    transition: .15s;
 }
-
 .filter__checkbox:checked ~ .filter__checkbox-slider {
     background-color: #B9A775;
-  }
-  
+}
 .filter__checkbox:checked ~ .filter__checkbox-slider::before {
     transform: translateX(15px);
     background-color: #1D1D1D;
 }
-
 .filter__text {
     font-family: 'Montserrat';
     font-style: normal;
@@ -65,41 +58,39 @@ input[type="checkbox" i] {
     color: #B9A775;
     margin: 0;
 }
-
-
 @media screen and (max-width: 1350px) {
     .filter__checkbox-slider {
         width: 41px;
         height: 21px;
         margin-right: 32px;
-    }
+   }
     .filter__checkbox-slider::before {
-        width: 18px;	
+        width: 18px;
         height: 18px;
-    }
+   }
     .filter__checkbox:checked ~ .filter__checkbox-slider::before {
         transform: translateX(18px);
-    }
+   }
     .filter__text {
         font-size: 19px;
         line-height: 23px;
-    }
+   }
 }
 @media screen and (max-width: 770px) {
     .filter__checkbox-slider {
         width: 33px;
         height: 18px;
         margin-right: 23px;
-    }
+   }
     .filter__checkbox-slider::before {
-        width: 15px;	
+        width: 15px;
         height: 15px;
-    }
+   }
     .filter__checkbox:checked ~ .filter__checkbox-slider::before {
         transform: translateX(15px);
-    }
+   }
     .filter__text {
         font-size: 16px;
         line-height: 20px;
-    }
+   }
 }

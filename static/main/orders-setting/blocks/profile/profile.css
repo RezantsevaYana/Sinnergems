@@ -7,7 +7,6 @@
     justify-content: space-between;
     align-self: center;
 }
-
 .profile__info {
     font-family: 'Forum';
     font-style: normal;
@@ -18,26 +17,21 @@
     margin: 0;
     color: #C4C4C4;
 }
-
-
 @media screen and (max-width: 660px) {
     .profile {
         padding: 43px 0 37px;
-    }
-
+   }
     .profile__info {
         font-size: 26px;
         line-height: 29px;
-    } 
+   }
 }
-
 @media screen and (max-width: 520px) {
     .profile {
         flex-direction: column;
         padding-top: 0;
-    }
+   }
     .profile__info:last-of-type {
         margin-top: 10px;
-    }
- 
+   }
 }

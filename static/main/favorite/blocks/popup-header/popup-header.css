@@ -1,6 +1,6 @@
 .popup-header-container {
-    width: 100vw; 
-    height: 100vh; 
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     top: 0;
     right: -100%;
@@ -8,19 +8,16 @@
     align-items: flex-start;
     opacity: 0;
     transition: all ease-in-out 0.8s;
-
 }
 .popup-header {
     display: flex;
     width: 100%;
     height: 354px;
-
     border-radius: 20px;
     background-color: #171717;
     padding: 58px 0 0 50px;
     box-sizing: border-box;
 }
-
 .popup__close {
     background-image: url(../../images/popup-close.svg);
     background-color: transparent;
@@ -33,44 +30,18 @@
     right: 20px;
     padding: 0;
 }
-
 .popup__close {
     cursor: pointer;
 }
-/*
-.popup-header {
-    display: flex;
-    position: fixed;
-    top:0;
-    right: -100%;
-  
-
-    width: 100%;
-    height: 354px;
-
-    border-radius: 20px;
-    background-color: #171717;
-    padding: 58px 0 0 50px;
-    box-sizing: border-box;
-    z-index: 2;
-    transition: all ease-in-out 0.8s;
-}
-*/
-
 .popup-header_open {
     right: 0;
     opacity: 1;
     z-index: 2;
-
 }
-
-
 .popup-header__items {
     padding: 0;
     margin: 0;
-
 }
-
 .popup-header__item {
     width: 100%;
     font-family: 'Forum';
@@ -87,23 +58,17 @@
     margin-bottom: 33px;
     margin-left: 44px;
 }
-
 .popup__close_header-popup {
     top: 16px;
     right: 28px;
 }
-
 .popup-header__item_activ {
     color: #B9A775;
     margin-left: 0;
-
 }
-
 .popup-header__li {
     display: none;
 }
-
-
 .popup-header__li_activ {
     display: inline;
     background-color: #B9A775;
@@ -112,22 +77,17 @@
     height: 19px;
     margin-right: 25px;
 }
-
 .item-link {
     outline: none;
     text-decoration: none;
 }
-
-
-
-
 @media screen and (max-width: 950px) {
     .popup__close {
         width: 9px;
         height: 10px;
         top: 18px;
         right: 29px;
-    }
+   }
 }
 
 

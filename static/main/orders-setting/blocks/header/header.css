@@ -7,7 +7,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .header__button {
     width: 26.51px;
     height: 29px;
@@ -26,52 +25,40 @@
     color: white;
     margin: 0;
     text-align: center;
-
 }
-
 .count {
     align-items: center;
     margin-top: 5px;
 }
-
 .mobile-header__button {
     display: none;
 }
-
 .header__button:hover {
     cursor: pointer;
 }
-
 .header__button_active {
     color: #B9A775;
 }
-
 .header__button_bag {
     background-image: url(../../images/bags.svg);
 }
-
 .header__button_bag_active {
     background-image: url(../../images/bags-active.svg);
     color: #B9A775;
 }
-
 .header__button_like {
     background-image: url(../../images/like.svg);
 }
-
 .header__button_like_active {
     background-image: url(../../images/like-active.svg);
     color: #B9A775;
 }
-
 .header__button_profile {
     background-image: url(../../images/profilelogo.svg);
 }
-
 .header__button_profile_active {
     background-image: url(../../images/profilelogo-active.svg);
 }
-
 .header__counter {
     font-family: 'Montserrat';
     font-style: normal;
@@ -81,29 +68,25 @@
     color: white;
     margin: 0;
 }
-
 .header__counter_active {
-    color: #B9A775;;
+    color: #B9A775;
+   ;
 }
-
 .header__counter_bag {
     position: absolute;
     top: 45%;
     right: 30%;
 }
-
 .header__counter_like {
     position: absolute;
     top: 9px;
     right: 9px;
 }
-
 .header__icon {
     width: 26.61px;
     height: 29px;
     position: relative;
 }
-
 .header__icons {
     display: flex;
     flex-direction: row;
@@ -112,8 +95,6 @@
     width: 217px;
     height: 31px;
 }
-
-
 .header__link {
     text-transform: uppercase;
     text-decoration: none;
@@ -125,15 +106,12 @@
     color: #C4C4C4;
     margin-right: 44px;
 }
-
 .header__link:last-of-type {
     margin-right: 0;
 }
-
 .header__link:hover {
     cursor: pointer;
 }
-
 .header__links {
     display: block;
     text-decoration: none;
@@ -144,17 +122,13 @@
     justify-content: space-between;
     align-items: center;
 }
-
-
 @media screen and (max-width: 1350px) {
     .header__links {
         display: none;
-    } 
-
+   }
     .header__icons {
         display: none;
-    }
-
+   }
     .mobile-header__button {
         display: block;
         border: none;
@@ -164,9 +138,8 @@
         width: 17px;
         height: 10px;
         align-self: center;
-    }
-
+   }
     .mobile-header__button:hover {
         cursor: pointer;
-    }
+   }
 }
