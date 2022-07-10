@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    margin: 41px 0;
 }
 .footer__icon {
     background-image: url(../../images/tlg.svg);
@@ -14,15 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
-}
-.footer__gradient {
-    width: 814px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 41px 48px 41px 0;
-    box-sizing: border-box;
+    margin-left: 100px;
 }
 .logo-footer {
     background-image: url(../../images/SINNERGEMS-logo.svg);
@@ -46,12 +39,15 @@
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    margin: 0 0 5px;
+    margin: 0;
 }
 .copyright-container__text:last-of-type {
     margin: 0;
 }
 @media screen and (max-width: 1350px) {
+    .footer {
+        margin-top: 60px;
+   }
     .footer__gradient {
         background-color: transparent;
         width: 70%;
@@ -61,6 +57,9 @@
         width: 22px;
         height: 34px;
    }
+   .footer__icon {
+    margin-left: 0;
+}
 }
 @media screen and (max-width: 698px) {
     .footer__gradient {

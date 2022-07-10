@@ -1,23 +1,8 @@
 .content-cards{
     width: 814px;
-    height: 1015px;
-    overflow-y: scroll;
+    margin-right: 62px;
 }
-.content-cards::-webkit-scrollbar {
-    width: 4px;
-    opacity: 0.15;
-    border-radius: 5px;
-}
-.content-cards::-webkit-scrollbar-track {
-    background: rgba(185, 167, 117, 0.15);
-    width: 4px;
-    border-radius: 5px;
-}
-.content-cards::-webkit-scrollbar-thumb {
-    background: rgba(185, 167, 117, 0.3);
-    width: 4px;
-    border-radius: 5px;
-}
+
 @media screen and (max-width: 1350px) {
     .content-cards {
         width: 100%;
