@@ -1,10 +1,11 @@
 .content {
     width: 1295px;
+    min-height: 1015px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 182px;
+    margin-bottom: 50px;
 }
 .content-link {
     display: none;
